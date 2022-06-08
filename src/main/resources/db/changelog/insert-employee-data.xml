@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+  <changeSet id="02" author="yakup">
+    <comment>Inserting employees</comment>
+    <insert tableName="employees">
+      <column name="id" valueNumeric="01"/>
+      <column name="name" value="employee_01"/>
+      <column name="company" valueNumeric="01"/>
+    </insert>
+    <insert tableName="employees">
+      <column name="id" valueNumeric="02"/>
+      <column name="name" value="employee_02"/>
+      <column name="company" valueNumeric="02"/>
+    </insert>
+    <insert tableName="employees">
+      <column name="id" valueNumeric="03"/>
+      <column name="name" value="employee_03"/>
+      <column name="company" valueNumeric="03"/>
+    </insert>
+    <insert tableName="employees">
+      <column name="id" valueNumeric="04"/>
+      <column name="name" value="employee_04"/>
+      <column name="company" valueNumeric="04"/>
+    </insert>
+    <insert tableName="employees">
+      <column name="id" valueNumeric="05"/>
+      <column name="name" value="employee_05"/>
+      <column name="company" valueNumeric="05"/>
+    </insert>
+  </changeSet>  
+</databaseChangeLog>
